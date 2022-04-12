@@ -15,8 +15,8 @@ db.authenticate()
   .catch((err) => console.log(err));
 
 // defiir piuerto
-const port = process.env.PORT || 4000;
-const host = process.env.HOST || "0.0.0.0";
+const port = process.env.BD_PORT || 4000;
+const host = process.env.BD_HOST || "0.0.0.0";
 
 // habilitar PUG
 app.set("view engine", "pug");
