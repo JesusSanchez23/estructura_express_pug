@@ -5,5 +5,26 @@ block slider
         em Aventura
 block contenido
     main.container.mt-5 
-        .row 
-            h1.text-center #{pagina}
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quas porro eligendi quam nam consequatur provident amet aspernatur repellat eum, omnis, quis unde, voluptate iste eos veritatis. Temporibus, excepturi autem.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita porro accusantium placeat saepe. Optio sunt provident sequi voluptatibus nihil?
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen inicio", class="img-fluid")
+    
+        include ./layout/bloque_viajes.pug
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% De descuento
+                        p.titulo Viaje a Cánada
+                        p.fecha 20 de Julio del 2022 - 30 Julio del 2022
+                        p.precio $2,500USD
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales.pug

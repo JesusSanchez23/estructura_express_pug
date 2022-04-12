@@ -4,7 +4,8 @@
   "description": "node",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node server"
   },
   "keywords": [
     "node",
@@ -20,6 +21,7 @@
     "sequelize": "^6.18.0"
   },
   "devDependencies": {
+    "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   }
 }
